@@ -3,7 +3,6 @@
  * @LastEditors: paulWong
  * @Description: 页面头部注释
  */
-require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
     env: {
@@ -29,7 +28,8 @@ module.exports = {
     },
     rules: {
         'no-debugger': 'warn', // 禁止出现 debugger
-        '@typescript-eslint/no-explicit-any': 'off' // 允许 any 类型
+        '@typescript-eslint/no-explicit-any': 'off', // 允许 any 类型
+        'vue/multi-word-component-names': ['error', { ignores: [] }]
     },
     extends: [
         './.eslintrc-auto-import.json',

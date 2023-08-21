@@ -3,5 +3,4 @@
 
 echo "it's working" && exit 1
 
-npm test
-# npx --no-install lint-staged
+npx --no-install lint-staged
